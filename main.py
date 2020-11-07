@@ -289,7 +289,6 @@ class Bot:
         logging.info('[Chat: {}] Sending response: {}'.format(chat_id, text))
         bot.sendMessage(chat_id=chat_id, text=text, parse_mode='html')
 
-
 if __name__ == '__main__':
     with open(os.path.join(SCRIPT_DIR, 'token.txt')) as token_file:
         token_ = token_file.readline().strip()
